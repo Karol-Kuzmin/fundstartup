@@ -2,7 +2,7 @@
 const HomePage = () => {
     return(
         <div>
-            <h6>HomePage</h6>
+            <h6 className="text-3xl text-white">HomePage</h6>
         </div>
     )
 }
