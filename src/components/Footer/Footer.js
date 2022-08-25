@@ -21,7 +21,7 @@ const Footer = () => {
             play-to-earn era!
           </span>
         </div>
-        <div className="xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-4 pt-[45px] xl:pl-[125px] lg:pl-[70px]">
+        <div className="xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-4 pt-[50px] xl:pl-[125px] lg:pl-[70px]">
           <span className="text-white font-['Montserrat'] non-italic font-normal text-[18px] leading-[22px] ">
             Terms of Services
             <br /> Privacy Policy
