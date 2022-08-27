@@ -8,6 +8,18 @@ module.exports = {
       screens: {
         'xs' : '480px',
         '3xl': '1792px'
+      },
+      // container: {
+      //   padding:'8.875rem'
+      // },
+      backgroundImage: {
+        'home': "url('../public/assets/images/background1.png')",
+      },
+      colors: {
+        'yellow-dark': '#F6B432'
+      },
+      fontFamily: {
+        'Mont': ['Montserrat']
       }
     },
 
