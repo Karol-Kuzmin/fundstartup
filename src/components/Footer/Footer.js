@@ -4,10 +4,10 @@ import { FaFacebook, FaTelegram, FaDiscord, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-black">
-      <div className="grid xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-4 xl:text-left lg:text-left md:text-left gap-4 pt-[39px] sm:text-center pb-[54px] ">
+      <div className="grid  md:grid-cols-12 sm:grid-cols-3 grid-cols-12 xl:text-left lg:text-left md:text-left gap-4 pt-[39px] sm:text-center text-center pb-[54px] ">
         {/* --------------- row -1 ------------------ */}
-        <div className="col-span-5 xl:pl-[128px] xl:pr-0 lg:pl-[128px] lg:pr-0 md:pl-[128px] md:pr-0 sm:pl-[100px] sm:pr-[100px]">
-          <div className="flex xl:justify-start lg:justify-start md:justify-start sm:justify-center">
+        <div className="md:col-span-5 col-span-12 xl:pl-[128px] xl:pr-0 lg:pl-[128px] lg:pr-0 md:pl-[128px] md:pr-0 sm:pl-[100px] sm:pr-[100px]">
+          <div className="flex xl:justify-start lg:justify-start md:justify-start sm:justify-center justify-center">
             <img
               src="/assets/images/fundstartup_logo.png"
               alt="fundstartup"
@@ -21,7 +21,7 @@ const Footer = () => {
             play-to-earn era!
           </span>
         </div>
-        <div className="xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-4 pt-[50px] xl:pl-[125px] lg:pl-[70px]">
+        <div className="xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-4 col-span-12 md:pt-[50px] pt-[20px] xl:pl-[125px] lg:pl-[70px]">
           <span className="text-white font-['Montserrat'] non-italic font-normal text-[18px] leading-[22px] ">
             Terms of Services
             <br /> Privacy Policy
@@ -30,7 +30,7 @@ const Footer = () => {
             <br /> Invite Friends
           </span>
         </div>
-        <div className="col-span-4 mt-[-10px] xl:pl-[60px] lg:pl-[40px]">
+        <div className="md:col-span-4 col-span-12 md:mt-[-10px] mt-[20px] xl:pl-[60px] lg:pl-[40px]">
           <span className="font-['Montserrat'] text-[#F6B432] non-italic font-bold text-[24px] leading-[29px] ">
             Newsletter
           </span>
@@ -50,7 +50,7 @@ const Footer = () => {
           <div className="mt-[31px] mb-[7px] font-['Montserrat'] non-italic font-normal text-[18px] text-white leading-[22px]">
             Join Us On Social
           </div>
-          <div className="flex mt-[7px] xl:justify-start lg:justify-start md:justify-start sm:justify-center">
+          <div className="flex mt-[7px] xl:justify-start lg:justify-start md:justify-start sm:justify-center justify-center">
             <span>
               <FaFacebook className="text-[#F6B432] text-[35px] mr-[16px]" />
             </span>

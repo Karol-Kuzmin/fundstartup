@@ -1,37 +1,10 @@
 import React from 'react'
 
-export default function TopPickCard() {
-
-
-    const toppick_data = [
-        {
-            img_url: "/assets/images/gems_b.png",
-            title: "GEMS",
-            content: "ARtonar is the first opp-less  3D & Augmnented reality NFT generation platform for the metaverse."
-        },
-        {
-            img_url: "/assets/images/gems_b.png",
-            title: "GEMS",
-            content: "ARtonar is the first opp-less  3D & Augmnented reality NFT generation platform for the metaverse."
-        },
-        {
-            img_url: "/assets/images/gems_b.png",
-            title: "GEMS",
-            content: "ARtonar is the first opp-less  3D & Augmnented reality NFT generation platform for the metaverse."
-        },
-        {
-            img_url: "/assets/images/gems_b.png",
-            title: "GEMS",
-            content: "ARtonar is the first opp-less  3D & Augmnented reality NFT generation platform for the metaverse."
-        },
-       
-    ];
+export default function TopPickCard(props) {
 
   return (
-    <div className="flex grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-1 gap-8 mt-[46px]">
-           
-        {toppick_data.map((items)=> (
-            <div className="flex md:justify-self-center sm:justify-self-center lg:w-[88%] md:w-[55%] sm:w-[45%] h-[372px] border-2 border-[#f6b432] rounded-[8px] border-solid ">
+    <div className="flex justify-center">          
+            <div className="flex md:justify-self-center sm:justify-self-center lg:w-[100%] md:w-[55%] sm:w-[45%] h-[372px] border-2 border-[#f6b432] rounded-[8px] border-solid ">
               <div className="container mx-auto px-[1.25rem]">
                 <div className="mt-[24px] flex">
                   <button className="w-[55px] h-[31px]  rounded-[8px]   bg-amber-500">
@@ -44,9 +17,9 @@ export default function TopPickCard() {
                   </div>
                 </div>
                 <div className="flex mt-[30px]">
-                  <img alt="" src={items.img_url}></img>
+                  <img alt="" src={props.topPickCard.img_url}></img>
                   <h2 className="text-[16] text-[#ffffff] ml-[7px] items-center flex">
-                   {items.title}
+                   {props.topPickCard.title}
                   </h2>
                   <div className="flex justify-end w-[80%]">
                     <button className="w-[93px] h-[31px] border-2 border-[#f6b432] rounded-[8px] border-solid">
@@ -57,7 +30,7 @@ export default function TopPickCard() {
                   </div>
                 </div>
                 <p className="text-[16px] text-[white] font-['Montserrat, '] mt-[16px]">
-                  {items.content}
+                  {props.topPickCard.content}
                 </p>
 
                 <hr className="border-[#f6b432] mt-[10px]"></hr>
@@ -89,8 +62,6 @@ export default function TopPickCard() {
                 </div>
               </div>
             </div>
-        ))}
-           
           </div>
   )
 }

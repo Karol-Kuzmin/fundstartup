@@ -1,28 +1,39 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/**/*.{js, jsx, ts, tsx}"
-  ],
+  content: ["./src/**/**/*.{js, jsx, ts, tsx}"],
   theme: {
     extend: {
       screens: {
-        'xs' : '480px',
-        '3xl': '1792px'
+        'xs': "520px",
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+        "3xl": "1792px",
       },
       // container: {
-      //   padding:'8.875rem'
+      //   screens: {
+      //     'xs': "480px",
+      //     'sm': '640px',
+      //     'md': '768px',
+      //     'lg': '1024px',
+      //     'xl': '1536px',
+      //     "3xl": "1792px",
+      //   }
       // },
       backgroundImage: {
-        'home': "url('../public/assets/images/background1.png')",
+        home: "url('../public/assets/images/background1.png')",
+        "home-a": "url('../public/assets/images/background2.png')",
+        "home-b": "url('../public/assets/images/background3.png')",
       },
       colors: {
-        'yellow-dark': '#F6B432'
+        "yellow-dark": "#F6B432",
       },
       fontFamily: {
-        'Mont': ['Montserrat']
-      }
+        Mont: ["Montserrat"],
+      },
     },
-
   },
   plugins: [],
-}
+};
