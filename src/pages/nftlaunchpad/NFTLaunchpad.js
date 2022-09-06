@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+import IMORoadMap from "../../components/RoadMap/IMORoadMap";
+import INORoadMap from "../../components/RoadMap/INORoadMap";
 
 const NFTLaunchpad = () => {
   const [arrowLeft, setArrowLeft] = useState(false);
   const [arrowRight, setArrowRight] = useState(false);
+  const [arrowLeftB, setArrowLeftB] = useState(false);
+  const [arrowRightB, setArrowRightB] = useState(false);
+
   return (
     <div className="bg-[#23170b]">
       <Header />
@@ -69,6 +74,7 @@ const NFTLaunchpad = () => {
               IMO Upcoming
             </h2>
             <div className="flex items-center justify-center gap-[43px] lg:mt-[20px] mt-[20px]">
+              <div className="js-prev6">
               <img
                 id="arrowLeft"
                 src={`${
@@ -90,6 +96,8 @@ const NFTLaunchpad = () => {
                 }
                 // onMouseEnter={()=>alert("ddd")}
               />
+              </div>
+              <div className="js-next6">
               <img
                 id="arrowRight"
                 src={
@@ -110,64 +118,11 @@ const NFTLaunchpad = () => {
                     : () => setArrowRight(false)
                 }
               />
-            </div>
-          </div>
-          <div className="flex  grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-1 gap-[3.381rem] lg:mt-[46px] md:mt-[26px] mt-[15px] gap-[30px]">
-            <div className="relative w-[293px] h-[372px] rounded-[10px] border-2 border-yellow-dark">
-              <div className="">
-                <div className="flex justify-center">
-                  <div className="">
-                    <div className="bg-upcoming-img w-[282px] h-[258px] flex ">
-                      <div className="grid grid-cols-2 container mx-auto px-[17px] mt-[18px]">
-                        <button className="w-[58.5px] h-[31px] bg-yellow-dark rounded-[5px] flex items-center justify-center ">
-                          <p className="w-[43px] h-[19px] font-bold text-[16px] leading-[19px]">
-                            New
-                          </p>
-                        </button>
-                        <button className="w-[53.5px] h-[32px] border-2 border-yellow-dark  rounded-[5px] flex justify-self-end justify-center items-center">
-                          <img
-                            alt="heart"
-                            src="./assets/images/heart.png"></img>
-                          &nbsp;&nbsp;
-                          <p className=" text-yellow-dark">0</p>
-                        </button>
-                      </div>
-                    </div>
-                    <div className="flex justify-center">
-                      <hr className="border-yellow-dark w-[88%] mt-[5px]"></hr>
-                    </div>
-                    <div className="grid grid-cols-2 mt-[12px] mx-auto container px-[17px]">
-                      <div>
-                        <p className="w-[52.5px] h-[14px] font-bold text-[12px] leading-[14px] text-white">
-                          Reveal 1
-                        </p>
-                        <p className="w-[88.4px] h-[14px] font-normal text-[12px] leading-[14px] text-white mt-[8px]">
-                          0 busd raised
-                        </p>
-                      </div>
-                      <button className="w-[111px] h-[37px] bg-yellow-dark rounded-[5px] flex justify-center items-center">
-                        <p className="w-[80px] h-[19px] font-bold text-[16px] leading-[19px]">
-                          View More
-                        </p>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div className=" flex h-[57px] absolute bottom-[0px] w-[100%]">
-                  <button className="self-end flex border-t-2 border-[#f6b432] w-[100%] h-[36px] text-[12px] text-[#ffffff] bg-[#43361f]  rounded-b-lg">
-                    <div className="grid grid-cols-2 container mx-auto px-[17px]  items-center h-[32px]">
-                      <p className="w-[42px] h-[14px] font-normal text-[12px] leading-[14px] text-white">
-                        Status
-                      </p>
-                      <p className="w-[98px] h-[14px] font-normal text-[12px] leading-[14px] text-white justify-self-end">
-                        Awoting Reveal
-                      </p>
-                    </div>
-                  </button>
-                </div>
               </div>
+              
             </div>
           </div>
+          <IMORoadMap/>
         </div>
 
         {/* INOs Upcoming */}
@@ -178,105 +133,54 @@ const NFTLaunchpad = () => {
               Upcoming INOs
             </h2>
             <div className="flex items-center justify-center gap-[43px] lg:mt-[20px] mt-[20px]">
+              <div className="js-prev7">
               <img
                 id="arrowLeft"
                 src={`${
-                  !arrowLeft
+                  !arrowLeftB
                     ? "./assets/images/ArrowLeft.png"
                     : "./assets/images/ArrowLeft_a.png"
                 }`}
                 alt="ArrowLeft"
                 className="w-[37px] h-[17px] hover:cursor-pointer"
                 onMouseEnter={
-                  !arrowLeft
-                    ? () => setArrowLeft(true)
-                    : () => setArrowLeft(false)
+                  !arrowLeftB
+                    ? () => setArrowLeftB(true)
+                    : () => setArrowLeftB(false)
                 }
                 onMouseLeave={
-                  !arrowLeft
-                    ? () => setArrowLeft(true)
-                    : () => setArrowLeft(false)
+                  !arrowLeftB
+                    ? () => setArrowLeftB(true)
+                    : () => setArrowLeftB(false)
                 }
                 // onMouseEnter={()=>alert("ddd")}
               />
+              </div>
+              <div className="js-next7">
               <img
                 id="arrowRight"
                 src={
-                  !arrowRight
+                  arrowRightB
                     ? "./assets/images/ArrowRight.png"
                     : "./assets/images/ArrowRight_a.png"
                 }
                 alt="ArrowRight"
                 className="w-[37px] h-[17px] hover:cursor-pointer"
                 onMouseEnter={
-                  !arrowRight
-                    ? () => setArrowRight(true)
-                    : () => setArrowRight(false)
+                  !arrowRightB
+                    ? () => setArrowRightB(true)
+                    : () => setArrowRightB(false)
                 }
                 onMouseLeave={
-                  !arrowRight
-                    ? () => setArrowRight(true)
-                    : () => setArrowRight(false)
+                  !arrowRightB
+                    ? () => setArrowRightB(true)
+                    : () => setArrowRightB(false)
                 }
               />
+              </div>   
             </div>
           </div>
-          <div className="flex  grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-1 gap-[3.381rem] lg:mt-[46px] md:mt-[26px] mt-[15px] gap-[30px]">
-            <div className="relative w-[295px] h-[372px] rounded-[10px] border-2 border-yellow-dark">
-              <div className="">
-                <div className="flex justify-center">
-                  <div className="">
-                    <div className="bg-upcoming-img w-[282px] h-[258px] flex ">
-                      <div className="grid grid-cols-2 container mx-auto px-[17px] mt-[18px]">
-                        <button className="w-[58.5px] h-[31px] bg-yellow-dark rounded-[5px] flex items-center justify-center ">
-                          <p className="w-[43px] h-[19px] font-bold text-[16px] leading-[19px]">
-                            New
-                          </p>
-                        </button>
-                        <button className="w-[53.5px] h-[32px] border-2 border-yellow-dark  rounded-[5px] flex justify-self-end justify-center items-center">
-                          <img
-                            alt="heart"
-                            src="./assets/images/heart.png"></img>
-                          &nbsp;&nbsp;
-                          <p className=" text-yellow-dark">0</p>
-                        </button>
-                      </div>
-                    </div>
-                    <div className="flex justify-center">
-                      <hr className="border-yellow-dark w-[88%] mt-[5px]"></hr>
-                    </div>
-                    <div className="grid grid-cols-2 mt-[12px] mx-auto container px-[17px]">
-                      <div>
-                        <p className="w-[52.5px] h-[14px] font-bold text-[12px] leading-[14px] text-white">
-                          Reveal 1
-                        </p>
-                        <p className="w-[88.4px] h-[14px] font-normal text-[12px] leading-[14px] text-white mt-[8px]">
-                          0 busd raised
-                        </p>
-                      </div>
-                      <button className="w-[111px] h-[37px] bg-yellow-dark rounded-[5px] flex justify-center items-center">
-                        <p className="w-[80px] h-[19px] font-bold text-[16px] leading-[19px]">
-                          View More
-                        </p>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div className=" flex h-[57px] absolute bottom-[0px] w-[100%]">
-                  <button className="self-end flex border-t-2 border-[#f6b432] w-[100%] h-[36px] text-[12px] text-[#ffffff] bg-[#43361f]  rounded-b-lg">
-                    <div className="grid grid-cols-2 container mx-auto px-[17px]  items-center h-[32px]">
-                      <p className="w-[42px] h-[14px] font-normal text-[12px] leading-[14px] text-white">
-                        Status
-                      </p>
-                      <p className="w-[98px] h-[14px] font-normal text-[12px] leading-[14px] text-white justify-self-end">
-                        Awoting Reveal
-                      </p>
-                    </div>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <INORoadMap/>
         </div>
 
         {/* Explore INOs */}
