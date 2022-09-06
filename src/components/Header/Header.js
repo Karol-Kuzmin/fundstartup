@@ -29,12 +29,6 @@ const Header = () => {
             </div>
             <div className="flex md:justify-center justify-center md:mt-[0px] mt-[20px]">
               <div className="flex items-center lg:order-2">
-                <button className="bg-[#F6B432] pt-[15px] pb-[15px] pr-[7px] pl-[7px] rounded-[5px]">
-                  <img src="/assets/images/login_register.png" />
-                </button>
-                <button className="bg-[#F6B432] ml-[12px]  pt-[15px] pb-[15px] pr-[7px] pl-[7px] rounded-[5px]">
-                  <img src="/assets/images/wallet.png" alt="wallet" />
-                </button>
                 <div
                   className="text-white dropdown"
                   onClick={() => setLanguageBar(false)}
@@ -106,7 +100,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      to="#"
+                      to="/nft_launchpad"
                       className="block   border-b border-gray-100 lg:hover:bg-transparent md:hover:bg-gray-50/[0.1] lg:border-0 text-white  no-underline  ml-[20px] md:ml-0 font-['Montserrat'] non-italic font-normal hover:font-bold text-[16px] leading-[1.3125rem]"
                     >
                       NFT Launchpad
@@ -122,7 +116,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      to="#"
+                      to="/claim"
                       className="block   border-b border-gray-100 lg:hover:bg-transparent md:hover:bg-gray-50/[0.1] lg:border-0 text-white  no-underline  ml-[20px] md:ml-0 font-['Montserrat'] non-italic font-normal hover:font-bold text-[16px] leading-[1.3125rem]"
                     >
                       Claims
@@ -130,11 +124,21 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      to="#"
+                      to="/fnfts"
                       className="block pr-4   border-b border-gray-100 lg:hover:bg-transparent md:hover:bg-gray-50/[0.1] lg:border-0 text-white  no-underline  ml-[20px] md:ml-0 font-['Montserrat'] non-italic font-normal hover:font-bold text-[16px] leading-[1.3125rem]"
                     >
                       FNFTS
                     </Link>
+                  </li>
+                  <li>
+                    <button className="bg-[#F6B432] pt-[15px] pb-[15px] pr-[7px] pl-[7px] rounded-[5px]">
+                      <img src="/assets/images/login_register.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button className="bg-[#F6B432] ml-[12px]  pt-[15px] pb-[15px] pr-[7px] pl-[7px] rounded-[5px]">
+                      <img src="/assets/images/wallet.png" alt="wallet" />
+                    </button>
                   </li>
                 </ul>
               </div>
