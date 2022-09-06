@@ -92,7 +92,7 @@ const HomePage = () => {
       </div>
       <div>
         <div className="container mt-[150px] mx-auto">
-          <div className="flex xl::justify-between lg:justify-between md:justify-between  sm:justify-around  items-center px-[50px]">
+          <div className="flex xl:justify-between lg:justify-between md:justify-between  sm:justify-around  items-center px-[50px]">
             <p className="flex items-center font-Mont md:text-[36px] sm:text-[24px] leading-[44px] text-yellow-dark">
               Upcoming INO & IMO
             </p>
@@ -148,7 +148,10 @@ const HomePage = () => {
               <UpcomeingCard upcoming={items} />
             ))}
           </div> */}
+          <div className="px-[50px]">
           <UpcomingRoadMap />
+          </div>
+          
           <div className="mt-[150px] px-[50px]">
             <div className="border-2 border-yellow-dark bg-gradient-to-t from-[#f6b43233] to-[#16161a00] rounded-[8px] border-solid">
               <div className="grid md:grid-cols-12 sm:grid-cols-1">

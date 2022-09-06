@@ -3,7 +3,7 @@ import React from "react";
 export default function PoolCard(props) {
   return (
     <div className="flex justify-center">
-      <div className="  md:justify-self-center sm:justify-self-center xl:w-[100%] lg:w-[100%] md:w-[45%] sm:w-[45%]  h-[207px] border-2 border-[#f6b432] rounded-[8px] border-solid pl-[21px] pr-[20px]">
+      <div className="  md:justify-self-center sm:justify-self-center md:w-[100%] sm:w-[70%]  h-[207px] border-2 border-[#f6b432] rounded-[8px] border-solid pl-[21px] pr-[20px]">
         <div className="text-start">
           <h3 className="  xs:text-[22px] text-[12px] text-[#f6b432] mt-[20px] leading-[29px]">
             {props.poolData.title}

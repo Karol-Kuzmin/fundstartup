@@ -66,7 +66,7 @@ const UpcomingRoadMap = (props) => {
       ];
 
     return (
-        <Box className={clsx(classes.root, 'px-[50px]', 'mt-[50px]')} id='RoadMap'>
+        <Box className={clsx(classes.root, 'mt-[50px]')} id='RoadMap'>
             <Swiper 
                 // slidesPerView={!isMobile ? 4 : 3}
                 breakpoints={{

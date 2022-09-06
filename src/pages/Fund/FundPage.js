@@ -5,36 +5,13 @@ import TopPickCard from "../../components/TopPickCard/TopPickCard";
 import CompletePoolCard from "../../components/CompletePoolCard/CompletePoolCard";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
+import TopPickRoadMap from "../../components/RoadMap/TopPickRoadMap";
+import UpcomingRoadMap from "../../components/RoadMap/UpcomingRoadMap";
+import CompletePoolRoadMap from "../../components/RoadMap/CompletePoolRoadMap";
 
 export default function FundPage() {
   const [arrowLeft, setArrowLeft] = useState(false);
   const [arrowRight, setArrowRight] = useState(false);
-  const upcoming_data = [
-    {
-      img_url: "/assets/images/artonar_b.png",
-      title: "ARtonar",
-      content:
-        "ARtonar is the first opp-less   3D & Augmnented reality NFT generation platform for the metaverse.",
-    },
-    {
-      img_url: "/assets/images/artonar_b.png",
-      title: "ARtonar",
-      content:
-        "ARtonar is the first opp-less  3D & Augmnented reality NFT generation platform for the metaverse.",
-    },
-    {
-      img_url: "/assets/images/artonar_b.png",
-      title: "ARtonar",
-      content:
-        "ARtonar is the first opp-less  3D & Augmnented reality NFT generation platform for the metaverse.",
-    },
-    {
-      img_url: "/assets/images/artonar_b.png",
-      title: "ARtonar",
-      content:
-        "ARtonar is the first opp-less  3D & Augmnented reality NFT generation platform for the metaverse.",
-    },
-  ];
 
   const pool_data = [
     {
@@ -53,59 +30,6 @@ export default function FundPage() {
     },
   ];
 
-  const topPick_data = [
-    {
-      img_url: "/assets/images/gems_b.png",
-      title: "GEMS",
-      content:
-        "ARtonar is the first opp-less  3D & Augmnented reality NFT generation platform for the metaverse.",
-    },
-    {
-      img_url: "/assets/images/gems_b.png",
-      title: "GEMS",
-      content:
-        "ARtonar is the first opp-less  3D & Augmnented reality NFT generation platform for the metaverse.",
-    },
-    {
-      img_url: "/assets/images/gems_b.png",
-      title: "GEMS",
-      content:
-        "ARtonar is the first opp-less  3D & Augmnented reality NFT generation platform for the metaverse.",
-    },
-    {
-      img_url: "/assets/images/gems_b.png",
-      title: "GEMS",
-      content:
-        "ARtonar is the first opp-less  3D & Augmnented reality NFT generation platform for the metaverse.",
-    },
-  ];
-
-  const completePool_data = [
-    {
-      img_url: "/assets/images/amazy_b.png",
-      title: "Amazy",
-      content:
-        " AMAZY is a challenging fitness app with game-fi features. You wear trendy virtual sneakers and take a walk or jog to earn AMT tokens.",
-      totalRaise: 237497.44,
-      maximum: 1939.85,
-    },
-    {
-      img_url: "/assets/images/amazy_b.png",
-      title: "Amazy",
-      content:
-        " AMAZY is a challenging fitness app with game-fi features. You wear trendy virtual sneakers and take a walk or jog to earn AMT tokens.",
-      totalRaise: 237497.44,
-      maximum: 1939.85,
-    },
-    {
-      img_url: "/assets/images/amazy_b.png",
-      title: "Amazy",
-      content:
-        " AMAZY is a challenging fitness app with game-fi features. You wear trendy virtual sneakers and take a walk or jog to earn AMT tokens.",
-      totalRaise: 237497.44,
-      maximum: 1939.85,
-    },
-  ];
 
   const myStyle = {
     backgroundImage: "url('/assets/images/bg.png')",
@@ -213,11 +137,12 @@ export default function FundPage() {
       {/* upcoming INO &IMO */}
 
       <div className="pt-[150px] container mx-auto px-[50px]">
-        <div className="lg:flex justify-between">
-          <h2 className="xl:text-[36px] lg:text-[28px] md:text-[22px] text-[#f6b432] font-bold leading-[44px] font-Mont">
+        <div className="flex md:justify-between sm:justify-around">
+          <p className="flex items-center xl:text-[36px] lg:text-[28px] md:text-[22px] text-[#f6b432] font-bold leading-[44px] font-Mont">
             Upcoming INO & IMO
-          </h2>
-          <div className="flex items-center justify-center gap-[43px] lg:mt-[20px] mt-[20px]">
+          </p>
+          <div className="flex items-center justify-center gap-[43px]">
+            <div className="js-prev1">
             <img
               id="arrowLeft"
               src={`${
@@ -239,6 +164,8 @@ export default function FundPage() {
               }
               // onMouseEnter={()=>alert("ddd")}
             />
+            </div>
+            <div className="js-next1">
             <img
               id="arrowRight"
               src={
@@ -259,24 +186,28 @@ export default function FundPage() {
                   : () => setArrowRight(false)
               }
             />
+            </div>
+            
           </div>
         </div>
-        <div className="flex grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-1 gap-[3.381rem] lg:mt-[46px] md:mt-[26px] mt-[15px] gap-[30px]">
+        {/* <div className="flex grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-1 gap-[3.381rem] lg:mt-[46px] md:mt-[26px] mt-[15px] gap-[30px]">
           {upcoming_data.map((items) => (
             <UpcomeingCard upcoming={items} />
           ))}
-        </div>
+        </div> */}
         {/* <UpcomeingCard /> */}
+        <UpcomingRoadMap/>
       </div>
 
       {/* top pick startup of the month */}
 
       <div className="mt-[150px]  container mx-auto px-[50px]">
-        <div className="lg:flex justify-between">
+        <div className="flex md:justify-between sm:justify-around">
           <h2 className="xl:text-[36px] lg:text-[28px] md:text-[22px] text-[#f6b432] font-bold">
             Top Pick Startup of the Month
           </h2>
-          <div className="flex items-center justify-center gap-[43px] lg:mt-[20px] mt-[20px]">
+          <div className="flex items-center justify-center gap-[43px]">
+            <div className="js-prev4">
             <img
               id="arrowLeft"
               src={`${
@@ -298,6 +229,8 @@ export default function FundPage() {
               }
               // onMouseEnter={()=>alert("ddd")}
             />
+            </div>
+            <div className="js-next4">
             <img
               id="arrowRight"
               src={
@@ -318,23 +251,28 @@ export default function FundPage() {
                   : () => setArrowRight(false)
               }
             />
+            </div>
+
+            
           </div>
         </div>
-        <div className="flex grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-1 gap-8 lg:mt-[46px] md:mt-[26px] mt-[15px]">
+        {/* <div className="flex grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-1 gap-8 lg:mt-[46px] md:mt-[26px] mt-[15px]">
           {topPick_data.map((items) => (
             <TopPickCard topPickCard={items} />
           ))}
-        </div>
+        </div> */}
+        <TopPickRoadMap/>
       </div>
 
       {/* completed pools */}
 
       <div className=" mt-[150px]  container mx-auto px-[50px]">
-        <div className="lg:flex mt-[46px] justify-between">
+        <div className="flex mt-[46px] md:justify-between sm:justify-around">
           <h2 className="xl:text-[36px] lg:text-[28px] md:text-[22px] text-[#f6b432] font-bold">
             Completed Pools
           </h2>
-          <div className="flex items-center justify-center gap-[43px] lg:mt-[20px] mt-[20px]">
+          <div className="flex items-center justify-center gap-[43px]">
+            <div className="js-prev5">
             <img
               id="arrowLeft"
               src={`${
@@ -356,6 +294,8 @@ export default function FundPage() {
               }
               // onMouseEnter={()=>alert("ddd")}
             />
+            </div>
+            <div className="js-next5">
             <img
               id="arrowRight"
               src={
@@ -376,13 +316,15 @@ export default function FundPage() {
                   : () => setArrowRight(false)
               }
             />
+            </div>
           </div>
         </div>
-        <div className="flex grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 gap-8 lg:mt-[46px] md:mt-[26px] mt-[15px]">
+        {/* <div className="flex grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 gap-8 lg:mt-[46px] md:mt-[26px] mt-[15px]">
           {completePool_data.map((items) => (
             <CompletePoolCard completePoolData={items} />
           ))}
-        </div>
+        </div> */}
+        <CompletePoolRoadMap/>
       </div>
 
       <div className="mt-[154px]"><Footer /></div>

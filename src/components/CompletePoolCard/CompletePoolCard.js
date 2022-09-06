@@ -5,7 +5,7 @@ export default function CompletePoolCard(props) {
 
   return (
     <div className="flex justify-center">
-            <div className="md:justify-self-center sm:justify-self-center lg:w-[100%] md:w-[55%] sm:w-[45%] border-2 border-[#f6b432] rounded-[8px] border-solid ">
+            <div className="md:justify-self-center sm:justify-self-center md:w-[100%] sm:w-[70%] border-2 border-[#f6b432] rounded-[8px] border-solid pb-[30px]">
             <div className="container mx-auto px-[1.25rem]">
               <div className="flex mt-[24px]">
                 <button className="w-[55px] h-[31px] rounded-[5px] bg-amber-500">

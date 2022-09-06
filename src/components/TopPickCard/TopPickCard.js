@@ -4,7 +4,7 @@ export default function TopPickCard(props) {
 
   return (
     <div className="flex justify-center">          
-            <div className="flex md:justify-self-center sm:justify-self-center lg:w-[100%] md:w-[55%] sm:w-[45%] h-[372px] border-2 border-[#f6b432] rounded-[8px] border-solid ">
+            <div className="flex md:justify-self-center sm:justify-self-center md:w-[100%] sm:w-[70%] h-[372px] border-2 border-[#f6b432] rounded-[8px] border-solid ">
               <div className="container mx-auto px-[1.25rem]">
                 <div className="mt-[24px] flex">
                   <button className="w-[55px] h-[31px]  rounded-[8px]   bg-amber-500">
@@ -17,9 +17,9 @@ export default function TopPickCard(props) {
                   </div>
                 </div>
                 <div className="flex mt-[30px]">
-                  <img alt="" src={props.topPickCard.img_url}></img>
+                  <img alt="" src={props.topPick.img_url}></img>
                   <h2 className="text-[16] text-[#ffffff] ml-[7px] items-center flex">
-                   {props.topPickCard.title}
+                   {props.topPick.title}
                   </h2>
                   <div className="flex justify-end w-[80%]">
                     <button className="w-[93px] h-[31px] border-2 border-[#f6b432] rounded-[8px] border-solid">
@@ -29,8 +29,8 @@ export default function TopPickCard(props) {
                     </button>
                   </div>
                 </div>
-                <p className="text-[16px] text-[white] font-['Montserrat, '] mt-[16px]">
-                  {props.topPickCard.content}
+                <p className="customer text-[16px] text-[white] font-['Montserrat'] mt-[16px] max-h-[100px] overflow-y-auto">
+                  {props.topPick.content}
                 </p>
 
                 <hr className="border-[#f6b432] mt-[10px]"></hr>
@@ -50,7 +50,7 @@ export default function TopPickCard(props) {
 
                 <hr className="border-[#f6b432] mt-[15px]"></hr>
 
-                <div className="flex items-center justify-center h-[50px] ">
+                <div className="flex items-center justify-center h-[50px] md:mt-0 sm:mt-[15px]">
                   <div className="flex hover:border-2 border-solid border-[#f6b432] rounded-[8px]">
                     <p className="text-[18px] text-[#f6b432] "> Learn More</p>
                     <img

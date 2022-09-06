@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaAngleDown } from "react-icons/fa";
+import FundPage from "../../pages/Fund/FundPage";
 
 const Header = () => {
   const [mobileIconFlag, setMobileIconFlag] = useState(false);
@@ -19,7 +20,7 @@ const Header = () => {
             }`}
           >
             <div className=" justify-center flex">
-              <Link to="" className="flex items-center">
+              <Link to="/" className="flex items-center">
                 <img
                   src="/assets/images/fundstartup_logo.png"
                   alt="FundStart Up"
@@ -96,7 +97,7 @@ const Header = () => {
                 >
                   <li>
                     <Link
-                      to="#"
+                      to="/fund"
                       className="block py-2 pr-4 pl-3  border-b border-gray-100 lg:hover:bg-transparent md:hover:bg-gray-50/[0.1] lg:border-0 text-white  no-underline  ml-[20px] md:ml-0 font-['Montserrat'] non-italic font-normal hover:font-bold text-[16px] leading-[1.3125rem]"
                       aria-current="page"
                     >
@@ -113,7 +114,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      to="#"
+                      to="/staking"
                       className="block  border-b border-gray-100 lg:hover:bg-transparent md:hover:bg-gray-50/[0.1] lg:border-0 text-white  no-underline  ml-[20px] md:ml-0 font-['Montserrat'] non-italic font-normal hover:font-bold text-[16px] leading-[1.3125rem]"
                     >
                       Staking/Farming

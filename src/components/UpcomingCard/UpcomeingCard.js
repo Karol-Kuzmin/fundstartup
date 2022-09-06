@@ -4,7 +4,7 @@ export default function UpcomeingCard(props) {
  
   return (
     <div className="flex justify-center">
-      <div className="flex  md:justify-self-center sm:justify-self-center md:w-[100%] sm:w-[60%] h-[372px] border-2 border-[#f6b432] rounded-[8px] border-solid ">
+      <div className="flex  md:justify-self-center sm:justify-self-center md:w-[100%] sm:w-[70%] h-[372px] border-2 border-[#f6b432] rounded-[8px] border-solid ">
         <div className="w-[100%] relative">
           <div className=" container mx-auto px-[1.25rem]">
             <div className="mt-[24px]  flex">
@@ -23,13 +23,13 @@ export default function UpcomeingCard(props) {
                 {props.upcoming.title}
               </h2>
             </div>
-            <p className="text-[16px] text-[white] font-Mont mt-[16px]">
+            <p className="customer text-[16px] text-[white] font-Mont mt-[16px] max-h-[100px] overflow-y-auto">
               {props.upcoming.content}
             </p>
 
             <hr className="border-[#f6b432] mt-[32px] "></hr>
 
-            <div className="flex mt-[10px] sm:mt-[20px] items-center">
+            <div className="flex md:mt-[10px] sm:mt-[25px] items-center">
               <p className="text-white text-[12px]">TBA</p>
 
               <div className="flex justify-end  w-[88%]">
@@ -42,7 +42,7 @@ export default function UpcomeingCard(props) {
             </div>
           </div>
           <div className=" ">
-            <button className=" absolute right-[0px] bottom-[0px] border-2 border-[#f6b432] w-[100%] h-[36px] text-[12px] text-[#ffffff] bg-[#43361f]  rounded-b-lg">
+            <button className=" absolute right-[0px] bottom-[0px] border-t-2 border-[#f6b432] w-[100%] h-[36px] text-[12px] text-[#ffffff] bg-[#43361f]  rounded-b-lg">
               <p className="justify-start flex ml-[20px]">Public</p>
             </button>
           </div>
