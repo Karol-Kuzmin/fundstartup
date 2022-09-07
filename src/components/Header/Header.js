@@ -1,10 +1,16 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { FaAngleDown } from "react-icons/fa";
 import "./Header.css";
 
 const Header = () => {
+  const location = useLocation();
   const [languageBar, setLanguageBar] = useState(true);
+  const [url, setUrl] = useState(null);
+
+  useEffect(() => {
+    setUrl(location.pathname);
+  },[location]);
   return (
     <div className="flex justify-center pt-[33px]">
       <div className="nav flex  w-[97%]">
@@ -30,28 +36,28 @@ const Header = () => {
         <div className="nav-links flex items-center h-[53px] flex-row 2xl:gap-7 gap-4 2xl:ml-[100px] xl:ml-[2%] ">
           <Link
             to="/fund"
-            className=" font-normal font-Mont text-[19px] leading-[22px]"
+            className={" font-normal font-Mont text-[19px] leading-[22px]" + (url ==="/fund"?" active":"")}
             aria-current="page">
             IMO Launchpad
           </Link>
           <Link
             to="/nft_launchpad"
-            className=" font-normal font-Mont text-[19px] leading-[22px]">
+            className={" font-normal font-Mont text-[19px] leading-[22px]" + (url ==="/nft_launchpad"?" active":"")}>
             NFT Launchpad
           </Link>
           <Link
             to="/staking"
-            className="font-normal font-Mont text-[19px] leading-[22px]">
+            className={"font-normal font-Mont text-[19px] leading-[22px]" + (url ==="/staking"?" active":"")}>
             Staking/Farming
           </Link>
           <Link
             to="/claim"
-            className="font-normal font-Mont text-[19px] leading-[22px]">
+            className={"font-normal font-Mont text-[19px] leading-[22px]" + (url ==="/claim"?" active":"")}>
             Claims
           </Link>
           <Link
             to="/fnfts"
-            className="font-normal font-Mont text-[19px] leading-[22px]">
+            className={"font-normal font-Mont text-[19px] leading-[22px]" + (url ==="/fnfts"?" active":"")}>
             FNFTS
           </Link>
 
@@ -75,38 +81,38 @@ const Header = () => {
               <div class="dd-c">
                 <ul>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <span>
                         ENGLISH
                       </span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <span>
                         TURKISH
                       </span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <span>RUSSIAN</span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <span>PORTUGUESE</span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <span>SPANISH</span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <span>FRANCH</span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
