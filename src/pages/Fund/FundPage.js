@@ -42,7 +42,7 @@ export default function FundPage() {
       <div style={myStyle} className=" h-[615px]  bg-cover">
         <Header />
         <div className="container mx-auto">
-        <div className="pt-[] mx-[50px]">
+        <div className="pt-[128px] mx-[50px]">
           <div className="text-start font-Mont font-bold leading-[63px]">
             <h1 className="text-[#FFFFFF]  lg:text-[52px] md:text-[52px] sm:text-[35px]">
               Enter the gateway of

@@ -15,8 +15,8 @@ const StakingPage = () => {
     <div>
       <div style={myStyle} className=" lg:h-[749px] h-[100%]  bg-cover">
         <Header />
-        <div className="container mx-auto  grid lg:grid-cols-2 md:grid-cols-1 lg:px-[50px] ">
-          <div className="flex justify-center xs:w-[100%] w-[375px]">
+        <div className="container mx-auto  grid lg:grid-cols-2 md:grid-cols-1 lg:px-[50px] mt-[74px]">
+          <div className="flex justify-center xs:w-[100%] w-[500px]">
             <div className=" lg:w-[100%] w-[80%] ">
               <div className="flex lg:justify-start justify-center">
                 <div className="font-bold font-['Montserrat', ]  ">
