@@ -12,6 +12,10 @@ import CompletePoolRoadMap from "../../components/RoadMap/CompletePoolRoadMap";
 export default function FundPage() {
   const [arrowLeft, setArrowLeft] = useState(false);
   const [arrowRight, setArrowRight] = useState(false);
+  const [arrowLeftB, setArrowLeftB] = useState(false);
+  const [arrowRightB, setArrowRightB] = useState(false);
+  const [arrowLeftC, setArrowLeftC] = useState(false);
+  const [arrowRightC, setArrowRightC] = useState(false);
 
   const pool_data = [
     {
@@ -142,7 +146,7 @@ export default function FundPage() {
             Upcoming INO & IMO
           </p>
           <div className="flex items-center justify-center gap-[43px]">
-            <div className="js-prev1">
+            <div className="js-next1">
             <img
               id="arrowLeft"
               src={`${
@@ -165,7 +169,7 @@ export default function FundPage() {
               // onMouseEnter={()=>alert("ddd")}
             />
             </div>
-            <div className="js-next1">
+            <div className="js-prev1">
             <img
               id="arrowRight"
               src={
@@ -207,48 +211,48 @@ export default function FundPage() {
             Top Pick Startup of the Month
           </h2>
           <div className="flex items-center justify-center gap-[43px]">
-            <div className="js-prev4">
+            <div className="js-next4">
             <img
               id="arrowLeft"
               src={`${
-                !arrowLeft
+                !arrowLeftB
                   ? "./assets/images/ArrowLeft.png"
                   : "./assets/images/ArrowLeft_a.png"
               }`}
               alt="ArrowLeft"
               className="w-[37px] h-[17px] hover:cursor-pointer"
               onMouseEnter={
-                !arrowLeft
-                  ? () => setArrowLeft(true)
-                  : () => setArrowLeft(false)
+                !arrowLeftB
+                  ? () => setArrowLeftB(true)
+                  : () => setArrowLeftB(false)
               }
               onMouseLeave={
-                !arrowLeft
-                  ? () => setArrowLeft(true)
-                  : () => setArrowLeft(false)
+                !arrowLeftB
+                  ? () => setArrowLeftB(true)
+                  : () => setArrowLeftB(false)
               }
               // onMouseEnter={()=>alert("ddd")}
             />
             </div>
-            <div className="js-next4">
+            <div className="js-prev4">
             <img
               id="arrowRight"
               src={
-                !arrowRight
+                !arrowRightB
                   ? "./assets/images/ArrowRight.png"
                   : "./assets/images/ArrowRight_a.png"
               }
               alt="ArrowRight"
               className="w-[37px] h-[17px] hover:cursor-pointer"
               onMouseEnter={
-                !arrowRight
-                  ? () => setArrowRight(true)
-                  : () => setArrowRight(false)
+                !arrowRightB
+                  ? () => setArrowRightB(true)
+                  : () => setArrowRightB(false)
               }
               onMouseLeave={
-                !arrowRight
-                  ? () => setArrowRight(true)
-                  : () => setArrowRight(false)
+                !arrowRightB
+                  ? () => setArrowRightB(true)
+                  : () => setArrowRightB(false)
               }
             />
             </div>
@@ -272,48 +276,48 @@ export default function FundPage() {
             Completed Pools
           </h2>
           <div className="flex items-center justify-center gap-[43px]">
-            <div className="js-prev5">
+            <div className="js-next5">
             <img
               id="arrowLeft"
               src={`${
-                !arrowLeft
+                !arrowLeftC
                   ? "./assets/images/ArrowLeft.png"
                   : "./assets/images/ArrowLeft_a.png"
               }`}
               alt="ArrowLeft"
               className="w-[37px] h-[17px] hover:cursor-pointer"
               onMouseEnter={
-                !arrowLeft
-                  ? () => setArrowLeft(true)
-                  : () => setArrowLeft(false)
+                !arrowLeftC
+                  ? () => setArrowLeftC(true)
+                  : () => setArrowLeftC(false)
               }
               onMouseLeave={
-                !arrowLeft
-                  ? () => setArrowLeft(true)
-                  : () => setArrowLeft(false)
+                !arrowLeftC
+                  ? () => setArrowLeftC(true)
+                  : () => setArrowLeftC(false)
               }
               // onMouseEnter={()=>alert("ddd")}
             />
             </div>
-            <div className="js-next5">
+            <div className="js-prev5">
             <img
               id="arrowRight"
               src={
-                !arrowRight
+                !arrowRightC
                   ? "./assets/images/ArrowRight.png"
                   : "./assets/images/ArrowRight_a.png"
               }
               alt="ArrowRight"
               className="w-[37px] h-[17px] hover:cursor-pointer"
               onMouseEnter={
-                !arrowRight
-                  ? () => setArrowRight(true)
-                  : () => setArrowRight(false)
+                !arrowRightC
+                  ? () => setArrowRightC(true)
+                  : () => setArrowRightC(false)
               }
               onMouseLeave={
-                !arrowRight
-                  ? () => setArrowRight(true)
-                  : () => setArrowRight(false)
+                !arrowRightC
+                  ? () => setArrowRightC(true)
+                  : () => setArrowRightC(false)
               }
             />
             </div>
