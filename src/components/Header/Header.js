@@ -26,7 +26,7 @@ const Header = () => {
           </div>
         </div>
         <div className="nav-btn">
-          <label for="nav-check">
+          <label htmlFor="nav-check">
             <span></span>
             <span></span>
             <span></span>
@@ -69,16 +69,16 @@ const Header = () => {
             <img src="/assets/images/wallet.png" alt="wallet" />
           </button>
 
-          <div class="c">
-            <div class="dd">
-              <div class="dd-a">
+          <div className="c">
+            <div className="dd">
+              <div className="dd-a">
                 <span className="flex justify-center items-center">
                   EN
                   <FaAngleDown className="text-[#F6B432]" />
                 </span>
               </div>
               <input type="checkbox" />
-              <div class="dd-c">
+              <div className="dd-c">
                 <ul>
                   <li>
                     <Link to="#">

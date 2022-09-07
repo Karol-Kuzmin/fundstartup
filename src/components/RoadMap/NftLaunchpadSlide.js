@@ -129,9 +129,9 @@ const NftLaunchpadSlide = (props) => {
           );
         })}
       </Swiper>
-      {/* <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div> */}
-      <div class="swiper-pagination"></div>
+      {/* <div className="swiper-button-next"></div>
+      <div className="swiper-button-prev"></div> */}
+      <div className="swiper-pagination"></div>
     </Box>
   );
 };

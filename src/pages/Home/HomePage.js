@@ -641,21 +641,21 @@ const HomePage = () => {
 
             <div className="w-[100%] text-white text-start sm:mt-[50px] lg:mt-0">
               <article>
-                <div class="contentWrapper">
+                <div className="contentWrapper">
                   <ul>
                     <li>
                       <input
                         type="checkbox"
                         id="question1"
                         name="accordionGroup"
-                        class="toggleState"
+                        className="toggleState"
                       />
-                      <h2 class="question">
-                        <label for="question1">
+                      <h2 className="question">
+                        <label htmlFor="question1">
                           What does IMO and INO mean?
                         </label>
                       </h2>
-                      <p class="answer">
+                      <p className="answer">
                         These are acronyms that stand for Initial Metaverse
                         Offer (IMO) and Initial NFT Offer (INO) which are the
                         main services provided by Fund Startup. Though the IMOs
@@ -670,14 +670,14 @@ const HomePage = () => {
                         type="checkbox"
                         id="question2"
                         name="accordionGroup"
-                        class="toggleState"
+                        className="toggleState"
                       />
-                      <h2 class="question">
-                        <label for="question2">
+                      <h2 className="question">
+                        <label htmlFor="question2">
                           What is the maximum file upload size?
                         </label>
                       </h2>
-                      <p class="answer">
+                      <p className="answer">
                         No more than 2GB. All files in your account must fit
                         your allotted storage space.
                       </p>
@@ -687,14 +687,14 @@ const HomePage = () => {
                         type="checkbox"
                         id="question3"
                         name="accordionGroup"
-                        class="toggleState"
+                        className="toggleState"
                       />
-                      <h2 class="question">
-                        <label for="question3">
+                      <h2 className="question">
+                        <label htmlFor="question3">
                           How do I reset my password?
                         </label>
                       </h2>
-                      <p class="answer">
+                      <p className="answer">
                         Click “Forgot password” from the login page or “Change
                         password” from your profile page. A reset link will be
                         emailed to you.
@@ -705,14 +705,14 @@ const HomePage = () => {
                         type="checkbox"
                         id="question4"
                         name="accordionGroup"
-                        class="toggleState"
+                        className="toggleState"
                       />
-                      <h2 class="question">
-                        <label for="question4">
+                      <h2 className="question">
+                        <label htmlFor="question4">
                           Can I cancel my subscription?
                         </label>
                       </h2>
-                      <p class="answer">
+                      <p className="answer">
                         Yes! Send us a message and we’ll process your request no
                         questions asked.
                       </p>
@@ -722,14 +722,14 @@ const HomePage = () => {
                         type="checkbox"
                         id="question5"
                         name="accordionGroup"
-                        class="toggleState"
+                        className="toggleState"
                       />
-                      <h2 class="question">
-                        <label for="question5">
+                      <h2 className="question">
+                        <label htmlFor="question5">
                           Do you provide additional support?
                         </label>
                       </h2>
-                      <p class="answer">
+                      <p className="answer">
                         Chat and email support is available 24/7. Phone lines
                         are open during normal business hours.
                       </p>

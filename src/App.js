@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/Home/HomePage";
 import FundPage from "./pages/Fund/FundPage";
 import StakingPage from "./pages/Staking/StakingPage";
@@ -10,7 +10,7 @@ import FnftsPage from "./pages/fnfts/FnftsPage";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/fund" element={<FundPage />} />
@@ -19,7 +19,7 @@ function App() {
           <Route path="/claim" element={<ClaimPage/>}/>
           <Route path="/fnfts" element={<FnftsPage/>}/>
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
