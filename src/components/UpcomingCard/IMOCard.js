@@ -2,11 +2,11 @@ import React from "react";
 
 export default function IMOCard(props) {
     return(
-        <div className="relative w-[100%] h-[372px] rounded-[10px] border-2 border-yellow-dark">
+        <div className="relative md:w-[100%] sm:w-[293px] h-[372px] sm:mx-auto rounded-[10px] border-2 border-yellow-dark">
               <div className="">
                 <div className="flex justify-center">
                   <div className="">
-                    <div className="bg-upcoming-img w-[100%px] h-[258px] flex ">
+                    <div className="bg-upcoming-img lg:w-[100%] md:w-[295px] sm:w-[282px] h-[258px] flex ">
                       <div className="grid grid-cols-2 container mx-auto px-[17px] mt-[18px]">
                         <button className="w-[58.5px] h-[31px] bg-yellow-dark rounded-[5px] flex items-center justify-center ">
                           <p className="w-[43px] h-[19px] font-bold text-[16px] leading-[19px]">

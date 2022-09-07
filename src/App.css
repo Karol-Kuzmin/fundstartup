@@ -26,3 +26,27 @@
 .customer::-webkit-scrollbar-thumb:hover {
   background: #ad7503; 
 }
+
+.swiper-pagination {
+  bottom: 10px;
+    padding-left: 210px;
+}
+@media screen and (max-width: 1024px) {
+  .swiper-pagination {
+    bottom: -50px!important;
+    padding-left: 0px;
+  }
+}
+.swiper-pagination-bullet {
+	width: 45px!important;
+  height: 6px;
+  background: #695D47!important;
+  border-radius: 8px!important;
+}
+.swiper-pagination-bullet-active {
+	width: 45px!important;
+  height: 6px;
+  background: #F7B432!important;
+  border-radius: 8px!important;
+  opacity: 1
+}
