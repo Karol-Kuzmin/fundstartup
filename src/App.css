@@ -50,3 +50,22 @@
   border-radius: 8px!important;
   opacity: 1
 }
+
+input[type="search"]{
+  padding:10px 15px 10px 40px;
+  font-size:20px;
+ 
+  border:none;
+
+  background-image: url(../public/assets/images/search.png);
+ 
+  background-repeat:no-repeat;
+/*background-size*/
+-webkit-background-size:20px 20px;
+ -moz-background-size:20px 20px;
+   -o-background-size:20px 20px;
+      background-size:20px 20px;
+/*positioning background image*/
+  background-position:10px 18px;
+
+}
