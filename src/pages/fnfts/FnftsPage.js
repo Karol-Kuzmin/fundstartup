@@ -82,8 +82,8 @@ const FnftsPage = () => {
         <div className="">
           <div className="container mx-auto ">
             <div className="grid lg:grid-cols-2 sm:grid-cols-1 sm:mt-[55px] items-start px-[50px]">
-              <div className="grid sm:justify-items-start justify-items-center">
-                <p className="w-[84%] h-auto lg:text-[52px]  sm:text-[30px] text-[20px] text-white font-bold sm:leading-[63px] leading-[40px] non-italic text-start">
+              <div className="grid lg:justify-items-start md:justify-items-center justify-items-center">
+                <p className="w-[84%] h-auto lg:text-[52px]  sm:text-[30px] text-[20px] text-white font-bold sm:leading-[63px] leading-[40px] non-italic lg:text-start md:text-center text-center">
                   Your Token To
                   <span className="text-yellow-dark"> Fundstartup NFT</span>
                   <span className=""> Space</span>
@@ -99,8 +99,8 @@ const FnftsPage = () => {
                   </button>
                 </div>
               </div>
-              <div className="flex sm:hidden lg:block">
-                <div className="relative">
+              <div className="flex  lg:block">
+                <div className="grid relative mx-auto">
                   <img
                     src="./assets/images/fnfts/Ellipse 25.png"
                     alt="StartUp"
@@ -109,12 +109,12 @@ const FnftsPage = () => {
                   <img
                     src="./assets/images/fnfts/Ellipse 26.png"
                     alt="StartUp"
-                    className="absolute left-[140px] bottom-[-130px] z-0"
+                    className="absolute lg:left-[50px] md:left-[70px] left-[50px] left-[70px] bottom-[-130px] z-0"
                   />
                   <img
                     src="./assets/images/fnfts/GoldBricks-2.png"
                     alt="StartUp"
-                    className="w-[83%] h-auto ml-[50px] z-40"
+                    className="justify-self-center w-[83%] h-auto  z-40"
                   />
                 </div>
               </div>
@@ -126,8 +126,8 @@ const FnftsPage = () => {
 
         <div className="">
           <div className="container mx-auto ">
-            <div className="grid lg:grid-cols-2 sm:grid-cols-1 sm:mt-[55px] items-start px-[50px] h-[9.02%]">
-              <div className=" lg:block ">
+            <div className="flex grid lg:grid-cols-2 sm:grid-cols-1 sm:mt-[55px] items-start px-[50px] h-[9.02%]">
+              <div className=" 2xl:order-first xl:order-first lg:order-first md:order-last order-last">
                 <div className="flex relative">
                   <img
                     src="./assets/images/fnfts/GearNFT.png"
@@ -141,14 +141,13 @@ const FnftsPage = () => {
                   />
                 </div>
               </div>
-              <div className="grid sm:justify-items-start justify-items-center mt-[25%] ml-[25%]">
+              <div className="grid lg:justify-items-start md:justify-items-center justify-items-center mt-[25%] lg:ml-[25%] ">
                 <p className=" lg:text-[52px]  sm:text-[30px] text-[20px] text-white font-bold sm:leading-[63px] leading-[40px] non-italic text-start">
-                  A Full Range Of <br></br>
-                  Utility Benefits
+                  A Full Range Of Utility Benefits
                 </p>
-                <span className="text-white  sm:text-[18px] text-[12px] font-normal sm:leading-[22px] leading-[16px] non-italic sm:text-start  sm:pr-[110px] mt-[10px]">
-                  Owning FNFTS will give access to many perks <br></br>
-                  in the Fundstartup NFT Space
+                <span className="lg:text-start md:text-center text-center text-white  sm:text-[18px] text-[12px] font-normal sm:leading-[22px] leading-[16px] non-italic sm:text-start  lg:pr-[110px]  mt-[10px]">
+                  Owning FNFTS will give access to many perks in the Fundstartup
+                  NFT Space
                 </span>
               </div>
             </div>
@@ -165,17 +164,15 @@ const FnftsPage = () => {
                     {item.title}
                   </p>
                 </div>
-                <div className="">
-                  <img
-                    alt=""
-                    src="./assets/images/fnfts/Ellipse 20.png"
-                    className="w-[100%] h-auto"
-                  ></img>
+                <div className="relative">
                   <img
                     alt=""
                     src={item.img_url}
-                    className=" absolute xl:bottom-[75px] xl:right-[60px] lg:bottom-[100px] lg:right-[45px] md:bottom-[60px] md:right-[60px] sm:bottom-[50px] sm:right-[150px] md:w-[60%] sm:w-[40%] h-auto"
-                  ></img>
+                    className="absolute 2xl:bottom-[100px] 2xl:right-[60px] xl:bottom-[75px] xl:right-[60px] lg:bottom-[20px] lg:right-[45px] md:bottom-[100px] md:right-[60px] bottom-[100px] right-[80px] md:w-[60%] sm:w-[40%] h-auto"></img>
+                  <img
+                    alt=""
+                    src="./assets/images/fnfts/Ellipse 20.png"
+                    className=" w-[100%] h-auto"></img>
                 </div>
               </div>
             );
@@ -187,11 +184,11 @@ const FnftsPage = () => {
         <div className="h-[7.47%] px-[50px] mt-[68px]">
           <div className=" ">
             <div className="grid lg:grid-cols-2 sm:grid-cols-1 sm:mt-[55px] items-start  h-[359px]">
-              <div className="grid sm:justify-items-start justify-items-center mt-[6%]">
-                <p className=" lg:text-[52px]  sm:text-[30px] text-[20px] text-white font-bold sm:leading-[63px] leading-[40px] non-italic text-start">
+              <div className="grid lg:justify-items-start md:justify-items-center justify-center mt-[6%]">
+                <p className=" lg:text-[52px]  sm:text-[30px] text-[20px] text-white font-bold sm:leading-[63px] leading-[40px] non-italic lg:text-start text-center">
                   We Are All About NFTs With Utilities
                 </p>
-                <span className="text-white  sm:text-[18px] text-[12px] font-normal sm:leading-[22px] leading-[16px] non-italic sm:text-start lg:pr-[200px] sm:pr-[110px] mt-[10px]">
+                <span className="  text-white  sm:text-[18px] text-[12px] font-normal sm:leading-[22px] leading-[16px] non-italic lg:text-start text-center lg:pr-[200px] lg:pr-[110px] mt-[10px]">
                   At Fundstartup NFT Space we focus on, NFTs with in-NFT
                   utilities, metaverse lands & assets and other utility based
                   collectibles!
@@ -225,13 +222,11 @@ const FnftsPage = () => {
                   <img
                     alt=""
                     src={item.img_url}
-                    className="md:w-[43%] sm:w-[33%] h-auto z-10"
-                  ></img>
+                    className="md:w-[43%] sm:w-[33%] h-auto z-10"></img>
                   <img
                     alt=""
                     src="./assets/images/fnfts/Ellipse 25.png"
-                    className="absolute xl:bottom-[-100px] lg:bottom-[-60px] md:bottom-[-100px] sm:bottom-[-165px] left-0 w-[100%] h-auto z-0"
-                  ></img>
+                    className="absolute xl:bottom-[-100px] lg:bottom-[-60px] md:bottom-[-100px] sm:bottom-[-165px] left-0 w-[100%] h-auto z-0"></img>
                 </div>
                 <div className="">
                   <div className="flex justify-center">
@@ -251,86 +246,85 @@ const FnftsPage = () => {
         </div>
 
         {/* A deep dive into nft utilities */}
-        <div className="px-[50px] mt-[68px] text-center">
-          <div className="grid  justify-items-center mt-[6%]">
-            <p className=" text-[52px] text-white font-bold h-[135px] leading-[60px] non-italic ">
-              A Deep Dive Into NFT <br></br>Utilities
-            </p>
-            <p className="text-white w-[542px] h-[48px] font-Mont text-[18px] leading-[22px] mt-[10px]">
-              FNFTS holders will have unique benefits and extra ways of{" "}
-              <br></br>
-              earning and burning to keep a sustainable economy
-            </p>
-          </div>
+        <div className="flex grid  ">
+          <div className="px-[50px] mt-[68px] text-center">
+            <div className="grid  justify-items-center mt-[6%]">
+              <p className=" text-[52px] text-white font-bold  leading-[60px] non-italic ">
+                A Deep Dive Into NFT <br></br>Utilities
+              </p>
+              <p className="text-white  h-[48px] font-Mont text-[18px] leading-[22px] mt-[10px]">
+                FNFTS holders will have unique benefits and extra ways of{" "}
+                <br></br>
+                earning and burning to keep a sustainable economy
+              </p>
+            </div>
 
-          <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-[15px] h-[372px] mt-[56px]">
-            {nft_u_data.map((item) => {
-              return (
-                <div className="w-[100%] h-[372px] border-2 border-yellow-dark bg-[#191519] rounded-[5px] text-center ">
-                  <div className="">
-                    <div className="flex justify-center mt-[20px]">
-                      <p className="text-white font-bold w-[281px]  text-[19px] leading-[22px]  ">
-                        {item.title}
-                      </p>
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-[15px] mt-[56px]">
+              {nft_u_data.map((item) => {
+                return (
+                  <div className="w-[100%] h-[372px] border-2 border-yellow-dark bg-[#191519] rounded-[5px] text-center ">
+                    <div className="">
+                      <div className="flex justify-center mt-[20px]">
+                        <p className="text-white font-bold w-[281px]  text-[19px] leading-[22px]  ">
+                          {item.title}
+                        </p>
+                      </div>
+                      <div className="flex justify-center mt-[12px]">
+                        <p className="w-[279px] h-[px] font-Mont text-[13px] leading-[16px]  text-white">
+                          {item.content}
+                        </p>
+                      </div>
                     </div>
-                    <div className="flex justify-center mt-[12px]">
-                      <p className="w-[279px] h-[px] font-Mont text-[13px] leading-[16px]  text-white">
-                        {item.content}
-                      </p>
+                    <div className="mt-[20%] flex justify-center relative">
+                      <img
+                        alt=""
+                        src="./assets/images/fnfts/Ellipse 25.png"
+                        className="absolute xl:bottom-[-70px] lg:bottom-[-60px] md:bottom-[-80px] sm:bottom-[-100px] left-0 w-[100%] h-auto z-0"></img>
+                      <img
+                        alt=""
+                        src={item.img_url}
+                        className="w-[55%] h-auto z-10"></img>
                     </div>
                   </div>
-                  <div className="mt-[20%] flex justify-center relative">
-                    <img
-                      alt=""
-                      src="./assets/images/fnfts/Ellipse 25.png"
-                      className="absolute xl:bottom-[-70px] lg:bottom-[-60px] md:bottom-[-80px] sm:bottom-[-100px] left-0 w-[100%] h-auto z-0"
-                    ></img>
-                    <img
-                      alt=""
-                      src={item.img_url}
-                      className="w-[55%] h-auto z-10"
-                    ></img>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+                );
+              })}
+            </div>
 
-          <div className="flex gap-x-4 mt-[66px] justify-center">
-            <button className="p-[16px] bg-yellow-dark rounded-[5px] sm:text-[18px] text-[12px]  leading-[22px] font-bold w-[150px] h-[53px]">
-              Claim Now
-            </button>
+            <div className="flex gap-x-4 mt-[66px] justify-center">
+              <button className="p-[16px] bg-yellow-dark rounded-[5px] sm:text-[18px] text-[12px]  leading-[22px] font-bold w-[150px] h-[53px]">
+                Claim Now
+              </button>
+            </div>
           </div>
         </div>
 
         {/* An Airdrop From The Creators Of Fundstartup */}
         <div className="h-[17%] px-[50px] mt-[68px] text-center">
           <div className=" ">
-            <div className="h-[193px]">
+            <div className="">
               <div className="grid  justify-items-center mt-[6%]">
-                <p className=" w-[859px] text-[52px] text-white font-bold h-[135px] leading-[60px] non-italic ">
+                <p className="  text-[52px] text-white font-bold  leading-[60px] non-italic ">
                   An Airdrop From The Creators Of <br></br> Fundstartup
                 </p>
-                <p className="text-white w-[542px] h-[48px] font-Mont text-[18px] leading-[22px] mt-[10px]">
+                <p className="text-white  h-[48px] font-Mont text-[18px] leading-[22px] mt-[10px]">
                   The #1 blockchain NFT and metaverse launchpad. Here <br></br>
                   are some of our biggest launches
                 </p>
               </div>
             </div>
 
-            <div className="h-[499px] grid grid-cols-2 mt-[50px]">
-              <div>
+            <div className=" grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 mt-[50px]">
+              <div className="lg:order-first md:order-last order-last">
                 <img
                   alt=""
                   src="./assets/images/fnfts/baki.png"
-                  className="w-[91%] h-auto"
-                ></img>
+                  className="w-[91%] h-auto"></img>
               </div>
 
               <div className="flex justify-end items-end">
-                <div className="w-[525px]">
+                <div className="">
                   <div className="flex justify-center">
-                    <p className="w-[497px] h-[96px] text-white font-bold text-[40px] leading-[46px]">
+                    <p className="  text-white font-bold text-[40px] leading-[46px]">
                       Our First Airdrop, FSP, Reached:
                     </p>
                   </div>
@@ -338,11 +332,10 @@ const FnftsPage = () => {
                     <img
                       alt=""
                       src="./assets/images/fnfts/airdrop4.png"
-                      className="w-[51.8] h-auto"
-                    ></img>
+                      className=" h-auto"></img>
                   </div>
                   <div className="flex justify-center mt-[35px]">
-                    <p className="w-[525px] h-[49px] text-white font-bold text-[40px] leading-[46px]">
+                    <p className="  text-white font-bold text-[40px] leading-[46px]">
                       Market Cap All-Time-High
                     </p>
                   </div>
@@ -353,31 +346,34 @@ const FnftsPage = () => {
         </div>
 
         {/* Take The Sky High */}
-        <div className="h-[5.25%] border-2 border-yellow-dark rounded-[5px] bg-gradient-to-t from-[#f6b43233] to-[#16161a00] flex mt-[10%] mb-[15%]">
-          <div className="flex items-center h-[252px] ml-[5%]">
-            <div>
-              <p className="w-[398px] h-[49px] text-white font-bold text-[40px] leading-[46px]">
-                Take The Sky High
-              </p>
-              <p className="w-[475px] h-[48px] text-white font-normal text-[18px] leading-[22px] font-Mont">
-                Check the documentation and details about all the<br></br>
-                guidelines, conditions and rules for FNFTS
-              </p>
-            </div>
-          </div>
-          <div className="flex  items-center ml-[26%]">
-            <button className=" w-[251px] h-[53px] bg-yellow-dark rounded-[5px]">
-              <div className="flex container mx-auto px-[40px]">
-                <p className="font-bold text-[18px] leading-[21px]">
-                  Learn More
+
+        <div>
+          <div className=" grid grid-cols-12 h-[5.25%] border-2 border-yellow-dark rounded-[5px] bg-gradient-to-t from-[#f6b43233] to-[#16161a00] flex mt-[10%] mb-[15%]">
+            <div className="md:col-span-8 col-span-12 flex items-center h-[252px] md:ml-[5%]">
+              <div>
+                <p className="lg:text-start md:text-start  text-center h-[49px] text-white font-bold text-[40px] leading-[46px]">
+                  Take The Sky High
                 </p>
-                <div className="grid w-[43%]">
-                  <div className="grid justify-items-end">
-                    <img alt="" src="./assets/images/arrowright.png"></img>
+                <p className="lg:text-start md:text-start  text-center h-[48px] text-white font-normal text-[18px] leading-[22px] font-Mont">
+                  Check the documentation and details about all the
+                  guidelines, conditions and rules for FNFTS
+                </p>
+              </div>
+            </div>
+            <div className="md:col-span-3 col-span-12 flex items-center justify-center ">
+              <button className="  h-[53px] bg-yellow-dark rounded-[5px]">
+                <div className="flex container mx-auto px-[40px]">
+                  <p className="font-bold text-[18px] leading-[21px] ">
+                    Learn More
+                  </p>
+                  <div className="grid ">
+                    <div className="grid justify-items-end">
+                      <img alt="" src="./assets/images/arrowright.png"></img>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </button>
+              </button>
+            </div>
           </div>
         </div>
       </div>

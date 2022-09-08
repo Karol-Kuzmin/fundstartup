@@ -1,15 +1,22 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { FaAngleDown } from "react-icons/fa";
 import "./Header.css";
 
 const Header = () => {
+  const location = useLocation();
+  const [url, setUrl] = useState(null)
   const [languageBar, setLanguageBar] = useState(true);
+
+  useEffect(() => {
+    setUrl(location.pathname);
+  }, [location]);
+
   return (
     <div className="flex justify-center pt-[33px]">
       <div className="nav flex grid grid-cols-12 w-[97%]">
         <input type="checkbox" id="nav-check" />
-        <div className="nav-header col-span-3">
+        <div className="nav-header md:col-span-3 col-span-10">
           <div className="nav-title">
             <Link to="/" className="flex items-center">
               <img
@@ -31,28 +38,28 @@ const Header = () => {
           
             <Link
               to="/fund"
-              className=" font-normal font-Mont text-[16px] leading-[22px]"
+              className={"font-normal font-Mont text-[16px] leading-[22px]" + (url === "/fund" ?" active" : "")}
               aria-current="page">
               IMO Launchpad
             </Link>
             <Link
               to="/nft_launchpad"
-              className=" font-normal font-Mont text-[16px] leading-[22px]">
+              className={"font-normal font-Mont text-[16px] leading-[22px]"  + (url === "/nft_launchpad" ?" active" : "")}>
               NFT Launchpad
             </Link>
             <Link
               to="/staking"
-              className="font-normal font-Mont text-[16px] leading-[22px]">
+              className={"font-normal font-Mont text-[16px] leading-[22px]" + (url === "/staking" ?" active" : "")}>
               Staking/Farming
             </Link>
             <Link
               to="/claim"
-              className="font-normal font-Mont text-[16px] leading-[22px]">
+              className={"font-normal font-Mont text-[16px] leading-[22px]" + (url === "/claim" ?" active" : "")}>
               Claims
             </Link>
             <Link
               to="/fnfts"
-              className="font-normal font-Mont text-[16px] leading-[22px]">
+              className={"font-normal font-Mont text-[16px] leading-[22px]" + (url === "/fnfts" ?" active" : "")}>
               FNFTS
             </Link>
           

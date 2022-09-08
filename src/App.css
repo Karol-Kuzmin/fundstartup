@@ -1,6 +1,7 @@
 @import url('http://fonts.cdnfonts.com/css/montserrat');
 @import url('http://fonts.cdnfonts.com/css/play');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 /* @import 'bootstrap/dist/css/bootstrap.min.css'; */
 .App {
   /* text-align: center; */
@@ -73,4 +74,56 @@ input[type="search"]{
 
 .input[type="checkbox"] {
   background: #ad7503!important;
+}
+
+/* pagination css */
+.flex-container {
+  display: flex;
+  justify-content: end;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+/* .flex-container > div {
+padding-top:10px;
+} */
+.paginate-ctn{
+    display: flex;
+}
+.round-effect{
+  color:black;
+  cursor:pointer;
+/*   border:1px solid red; */
+  
+  font-size:22px;
+  text-align:center;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:4px;
+  border-radius: 10%;
+  height: 40px;
+  width: 40px;
+  margin:5px;
+  background-color: #F7B432;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   text-decoration: none;
+}
+
+.round-effect:hover{
+  text-decoration: none;
+  background:#ad7503;
+  color:#FFF;
+}
+.round-effect:hover a {
+  text-decoration: none;
+  color:#FFF;
+}
+
+.active{
+  background:#23170b;
+  color:#FFF;
+}
+a:link {
+  text-decoration: none;
+  color:#DD4124;
 }

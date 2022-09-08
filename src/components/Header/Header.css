@@ -38,6 +38,10 @@
   color: #f6b432;
 }
 
+.nav > .nav-links > a.active {
+  color: #f6b432;
+}
+
 .nav > #nav-check {
   display: none;
 }
