@@ -194,12 +194,6 @@ export default function FundPage() {
             
           </div>
         </div>
-        {/* <div className="flex grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-1 gap-[3.381rem] lg:mt-[46px] md:mt-[26px] mt-[15px] gap-[30px]">
-          {upcoming_data.map((items) => (
-            <UpcomeingCard upcoming={items} />
-          ))}
-        </div> */}
-        {/* <UpcomeingCard /> */}
         <UpcomingRoadMap/>
       </div>
 
@@ -231,7 +225,6 @@ export default function FundPage() {
                   ? () => setArrowLeftB(true)
                   : () => setArrowLeftB(false)
               }
-              // onMouseEnter={()=>alert("ddd")}
             />
             </div>
             <div className="js-prev4">
@@ -260,11 +253,6 @@ export default function FundPage() {
             
           </div>
         </div>
-        {/* <div className="flex grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-1 gap-8 lg:mt-[46px] md:mt-[26px] mt-[15px]">
-          {topPick_data.map((items) => (
-            <TopPickCard topPickCard={items} />
-          ))}
-        </div> */}
         <TopPickRoadMap/>
       </div>
 
@@ -323,11 +311,6 @@ export default function FundPage() {
             </div>
           </div>
         </div>
-        {/* <div className="flex grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 gap-8 lg:mt-[46px] md:mt-[26px] mt-[15px]">
-          {completePool_data.map((items) => (
-            <CompletePoolCard completePoolData={items} />
-          ))}
-        </div> */}
         <CompletePoolRoadMap/>
       </div>
 

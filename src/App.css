@@ -1,5 +1,6 @@
 @import url('http://fonts.cdnfonts.com/css/montserrat');
 @import url('http://fonts.cdnfonts.com/css/play');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 /* @import 'bootstrap/dist/css/bootstrap.min.css'; */
 .App {
   /* text-align: center; */
@@ -68,4 +69,8 @@ input[type="search"]{
 /*positioning background image*/
   background-position:10px 18px;
 
+}
+
+.input[type="checkbox"] {
+  background: #ad7503!important;
 }

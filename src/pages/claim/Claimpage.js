@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+import CheckBox from "../../components/checkbox/CheckBox";
 const ClaimPage = () => {
   const [changeButton, setChangeButton] = useState("monthly");
   return (
@@ -29,10 +30,13 @@ const ClaimPage = () => {
 
           <div className="flex lg:ml-[5%] xl:ml-[5%] md:ml-[5%] xl:col-span-3 lg:col-span-4 md:col-span-5 col-span-12">
             <div className=" flex  items-center h-[81px]">
-              <input
-                type="checkbox"
-                className="w-[41px] h-[41px] border-[1px] border-[#F6B432] outline-0 text-white"
-              />
+              {/* <label>
+                <input
+                  type="checkbox"
+                  className="claimcheckbox w-[41px] h-[41px] border-[1px] border-[#F6B432] outline-0 text-white "
+                />
+              </label> */}
+              <CheckBox/>
             </div>
             <div className="flex ml-[2%] items-center  h-[81px]">
               <p className="text-white leading-[20px] font-bold text-[16px] ">
@@ -59,7 +63,8 @@ const ClaimPage = () => {
                     ? "w-[48%] h-[51px] bg-yellow-dark text-[black] text-[16px] font-bold leading-[20px]"
                     : "w-[48%] h-[51px]  text-[white] text-[16px] font-bold leading-[20px]"
                 }
-                onClick={() => setChangeButton("monthly")}>
+                onClick={() => setChangeButton("monthly")}
+              >
                 Monthly
               </button>
               <button
@@ -68,7 +73,8 @@ const ClaimPage = () => {
                     ? "w-[48%] h-[51px] bg-yellow-dark text-[black] text-[16px] font-bold leading-[20px]"
                     : "w-[48%] h-[51px]  text-[white] text-[16px] font-bold leading-[20px]"
                 }
-                onClick={() => setChangeButton("linear")}>
+                onClick={() => setChangeButton("linear")}
+              >
                 Linear
               </button>
             </div>
@@ -123,7 +129,8 @@ const ClaimPage = () => {
                   <img
                     alt="add"
                     src="./assets/images/claim/message-add.png"
-                    className=""></img>
+                    className=""
+                  ></img>
                 </button>
               </div>
             </div>

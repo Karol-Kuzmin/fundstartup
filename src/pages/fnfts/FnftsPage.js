@@ -109,7 +109,7 @@ const FnftsPage = () => {
                   <img
                     src="./assets/images/fnfts/Ellipse 26.png"
                     alt="StartUp"
-                    className="absolute left-[220px] bottom-[-130px] z-0"
+                    className="absolute left-[140px] bottom-[-130px] z-0"
                   />
                   <img
                     src="./assets/images/fnfts/GoldBricks-2.png"
