@@ -34,7 +34,7 @@ const Header = () => {
           </label>
         </div>
 
-        <div className="nav-links flex items-center h-[53px] col-span-9 2xl:gap-10 xl:gap-4 ml-6">
+        <div className="customer nav-links flex items-center h-[53px] col-span-9 2xl:gap-10 xl:gap-4 ml-6 z-40">
           
             <Link
               to="/fund"

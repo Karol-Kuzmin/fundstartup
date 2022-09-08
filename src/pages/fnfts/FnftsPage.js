@@ -88,7 +88,7 @@ const FnftsPage = () => {
                   <span className="text-yellow-dark"> Fundstartup NFT</span>
                   <span className=""> Space</span>
                 </p>
-                <span className="w-[71.2%] h-auto text-white  sm:text-[18px] text-[12px] font-normal sm:leading-[22px] leading-[16px] non-italic sm:text-start md:pr-[48px] sm:pr-[110px] mt-[3.2%]">
+                <span className="w-[71.2%] h-auto text-white  sm:text-[18px] text-[12px] font-normal sm:leading-[22px] leading-[16px] non-italic lg:text-start text-center    mt-[3.2%]">
                   Claim your FNFTS, and then stake or farm them to enjoy all
                   benefits of Fundstartup NFT Space. From the creators of
                   Fundstartup, #1 blockchain nft and metaverse launchpad.
@@ -158,21 +158,18 @@ const FnftsPage = () => {
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-[20px] h-[7.75%] mt-[51px] px-[50px]">
           {utility_data.map((item) => {
             return (
-              <div className="w-[100%] h-[372px] border-2 border-yellow-dark bg-[#191519] rounded-[5px] text-center  relative">
+              <div className="md:w-[100%] sm:w-[80%] md:h-[100%] sm:h-[80%] border-2 border-yellow-dark bg-[#191519] rounded-[5px] text-center  relative">
                 <div className="flex justify-center">
                   <p className="text-white font-bold w-[281px] h-[44px] mt-[20px] text-[19px] leading-[22px]  ">
                     {item.title}
                   </p>
                 </div>
-                <div className="relative">
-                  <img
-                    alt=""
-                    src={item.img_url}
-                    className="absolute 2xl:bottom-[100px] 2xl:right-[60px] xl:bottom-[75px] xl:right-[60px] lg:bottom-[20px] lg:right-[45px] md:bottom-[100px] md:right-[60px] bottom-[100px] right-[80px] md:w-[60%] sm:w-[40%] h-auto"></img>
+                <div className="flex justify-center items-center relative">
+                  <img alt="" src={item.img_url} className=" absolute"></img>
                   <img
                     alt=""
                     src="./assets/images/fnfts/Ellipse 20.png"
-                    className=" w-[100%] h-auto"></img>
+                    className=""></img>
                 </div>
               </div>
             );
@@ -218,7 +215,7 @@ const FnftsPage = () => {
           {u_data.map((item) => {
             return (
               <div className="w-[100%] h-[372px] 2xl:h-[400px] border-2 border-yellow-dark bg-[#191519] rounded-[5px] text-center pb-[30px]">
-                <div className="md:mt-[25%] sm:mt-[4%] flex justify-center relative">
+                <div className="md:mt-[25%] sm:mt-[4%] mt-[8%] items-center flex justify-center relative">
                   <img
                     alt=""
                     src={item.img_url}
@@ -262,28 +259,32 @@ const FnftsPage = () => {
             <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-[15px] mt-[56px]">
               {nft_u_data.map((item) => {
                 return (
-                  <div className="w-[100%] h-[372px] border-2 border-yellow-dark bg-[#191519] rounded-[5px] text-center ">
-                    <div className="">
-                      <div className="flex justify-center mt-[20px]">
-                        <p className="text-white font-bold w-[281px]  text-[19px] leading-[22px]  ">
-                          {item.title}
-                        </p>
+                  <div className="w-[100%]  border-2 border-yellow-dark bg-[#191519] rounded-[5px] text-center ">
+                    <div>
+                      <div className="">
+                        <div className="flex justify-center mt-[20px]">
+                          <p className="text-white font-bold w-[281px]  text-[19px] leading-[22px]  ">
+                            {item.title}
+                          </p>
+                        </div>
+                        <div className="flex justify-center mt-[12px]">
+                          <p className="w-[279px]  font-Mont text-[13px] leading-[16px]  text-white">
+                            {item.content}
+                          </p>
+                        </div>
                       </div>
-                      <div className="flex justify-center mt-[12px]">
-                        <p className="w-[279px] h-[px] font-Mont text-[13px] leading-[16px]  text-white">
-                          {item.content}
-                        </p>
+                      <div>
+                        <div className="  flex justify-center items-center relative">
+                          <img
+                            alt="h-auto z-10"
+                            src="./assets/images/fnfts/Ellipse 25.png"
+                            className=""></img>
+                          <img
+                            alt=""
+                            src={item.img_url}
+                            className="absolute "></img>
+                        </div>
                       </div>
-                    </div>
-                    <div className="mt-[20%] flex justify-center relative">
-                      <img
-                        alt=""
-                        src="./assets/images/fnfts/Ellipse 25.png"
-                        className="absolute xl:bottom-[-70px] lg:bottom-[-60px] md:bottom-[-80px] sm:bottom-[-100px] left-0 w-[100%] h-auto z-0"></img>
-                      <img
-                        alt=""
-                        src={item.img_url}
-                        className="w-[55%] h-auto z-10"></img>
                     </div>
                   </div>
                 );
@@ -355,8 +356,8 @@ const FnftsPage = () => {
                   Take The Sky High
                 </p>
                 <p className="lg:text-start md:text-start  text-center h-[48px] text-white font-normal text-[18px] leading-[22px] font-Mont">
-                  Check the documentation and details about all the
-                  guidelines, conditions and rules for FNFTS
+                  Check the documentation and details about all the guidelines,
+                  conditions and rules for FNFTS
                 </p>
               </div>
             </div>
@@ -366,7 +367,7 @@ const FnftsPage = () => {
                   <p className="font-bold text-[18px] leading-[21px] ">
                     Learn More
                   </p>
-                  <div className="grid ">
+                  <div className="grid pl-2">
                     <div className="grid justify-items-end">
                       <img alt="" src="./assets/images/arrowright.png"></img>
                     </div>

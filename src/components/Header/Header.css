@@ -20,11 +20,6 @@
   display: none;
 }
 
-.nav > .nav-links {
-  /* display: inline;
-  float: right;
-  font-size: 18px; */
-}
 
 .nav > .nav-links > a {
   display: inline-block;
@@ -72,7 +67,7 @@
   .nav > .nav-links {
     position: absolute;
     display: block;
-    width: 100%;
+    width: 90%;
     background-color: rgb(5, 2, 2);
     opacity: 85%;
     /* height: 500px!important; */

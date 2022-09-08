@@ -97,7 +97,7 @@ const HomePage = () => {
               Upcoming INO & IMO
             </p>
             <div className="flex items-center justify-center gap-[43px]">
-              <div className="js-prev1">
+              <div className="js-next1">
                 <img
                   id="arrowLeft"
                   src={`${
@@ -119,7 +119,7 @@ const HomePage = () => {
                   }
                 />
               </div>
-              <div className="js-next1">
+              <div className="js-prev1">
                 <img
                   id="arrowRight"
                   src={
@@ -143,11 +143,6 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          {/* <div className="flex grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-1 gap-[1.381rem] mt-[46px] px-[50px]">
-            {upcoming_data.map((items, index) => (
-              <UpcomeingCard upcoming={items} />
-            ))}
-          </div> */}
           <div className="px-[50px]">
           <UpcomingRoadMap />
           </div>
@@ -504,7 +499,7 @@ const HomePage = () => {
                 Our Advisors
               </p>
               <div className="flex items-center gap-[43px]">
-                <div className="js-prev2">
+                <div className="js-next2">
                   <img
                     id="arrowLeft"
                     src={`${
@@ -527,7 +522,7 @@ const HomePage = () => {
                     // onMouseEnter={()=>alert("ddd")}
                   />
                 </div>
-                <div className="js-next2">
+                <div className="js-prev2">
                   <img
                     id="arrowRight"
                     src={
@@ -551,11 +546,6 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="flex grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-1 gap-[1.8125rem] mt-[62px] px-[50px]">
-              {advisors_data.map((items) => (
-                <HomeAdvisorCard advisor={items} />
-              ))}
-            </div> */}
             <AdvisorRoadMap />
           </div>
         </div>
@@ -568,7 +558,7 @@ const HomePage = () => {
                 Our Partners
               </p>
               <div className="flex items-center gap-[43px]">
-                <div className="js-prev3">
+                <div className="js-next3">
                 <img
                   id="arrowLeft"
                   src={`${
@@ -590,7 +580,7 @@ const HomePage = () => {
                   }
                 />
                 </div>
-                <div className="js-next3">
+                <div className="js-prev3">
                 <img
                   id="arrowRight"
                   src={
