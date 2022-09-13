@@ -84,30 +84,30 @@ const Header = () => {
               <div class="dd-c">
                 <ul>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <span>ENGLISH</span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <span>TURKISH</span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <span>RUSSIAN</span>
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <span>SPANISH</span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <span>FRANCH</span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
