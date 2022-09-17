@@ -28,7 +28,7 @@ export default function FundPage() {
       content: "Get to know more about the IMO & INO Allocation system here",
     },
     {
-      title: "What is Fund Startup",
+      title: "How to get started",
       content:
         "Timer for action! This guid enlights you on your blockchain NFT Metaverses path",
     },

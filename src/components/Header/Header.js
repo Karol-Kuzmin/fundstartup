@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaAngleDown } from "react-icons/fa";
+import {AiOutlineUser} from 'react-icons/ai';
+import {BsWallet} from 'react-icons/bs';
 import "./Header.css";
 
 const Header = () => {
@@ -34,42 +36,55 @@ const Header = () => {
           </label>
         </div>
 
-        <div className="customer nav-links flex items-center h-[53px] col-span-9 2xl:gap-10 xl:gap-4 ml-6 z-40">
+        <div className="customer nav-links flex text-[14px] items-center h-[53px] col-span-9 2xl:gap-10 xl:gap-4 ml-6 z-40">
           
             <Link
               to="/fund"
-              className={"font-normal font-Mont text-[16px] leading-[22px]" + (url === "/fund" ?" active" : "")}
+              className={"font-normal font-Mont leading-[22px]" + (url === "/fund" ?" active" : "")}
               aria-current="page">
               IMO Launchpad
             </Link>
             <Link
               to="/nft_launchpad"
-              className={"font-normal font-Mont text-[16px] leading-[22px]"  + (url === "/nft_launchpad" ?" active" : "")}>
+              className={"font-normal font-Mont leading-[22px]"  + (url === "/nft_launchpad" ?" active" : "")}>
               NFT Launchpad
             </Link>
             <Link
               to="/staking"
-              className={"font-normal font-Mont text-[16px] leading-[22px]" + (url === "/staking" ?" active" : "")}>
+              className={"font-normal font-Mont leading-[22px]" + (url === "/staking" ?" active" : "")}>
               Staking/Farming
             </Link>
             <Link
               to="/claim"
-              className={"font-normal font-Mont text-[16px] leading-[22px]" + (url === "/claim" ?" active" : "")}>
+              className={"font-normal font-Mont leading-[22px]" + (url === "/claim" ?" active" : "")}>
               Claims
             </Link>
             <Link
               to="/fnfts"
-              className={"font-normal font-Mont text-[16px] leading-[22px]" + (url === "/fnfts" ?" active" : "")}>
+              className={"font-normal font-Mont leading-[22px]" + (url === "/fnfts" ?" active" : "")}>
               FNFTS
+            </Link>
+            <Link
+              to="/fnfts"
+              className={"font-normal font-Mont leading-[22px]" + (url === "/persaleproject" ?" active" : "")}>
+              Presale Project
             </Link>
           
 
-          <button className="bg-[#F6B432] w-[179px] h-[53px] rounded-[5px] 2xl:ml-[200px] flex justify-center items-center">
-            <img alt="" src="/assets/images/login_register.png" />
+          <button className="bg-[#F6B432] width-[179px] px-[7.25px] py-[10.5px] rounded-[5px] 2xl:ml-[200px] flex justify-center items-center font-bold">
+            {/* <img alt="" src="/assets/images/login_register.png" /> */}
+            <span className="flex items-center">
+            <AiOutlineUser/> Login/Register
+            </span>
+            
           </button>
 
-          <button className="bg-[#F6B432] w-[122px] h-[53px] flex justify-center items-center rounded-[5px]">
-            <img src="/assets/images/wallet.png" alt="wallet" />
+          <button className="bg-[#F6B432] width-[122px] px-[7.25px] py-[10.5px] flex justify-center items-center rounded-[5px] font-bold">
+            {/* <img src="/assets/images/wallet.png" alt="wallet" /> */}
+            <span className="flex items-center">
+            <BsWallet/> Wallet
+            </span>
+            
           </button>
 
           <div className="c">

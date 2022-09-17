@@ -5,7 +5,7 @@ export default function PoolCard(props) {
     <div className="flex justify-center">
       <div className="  md:justify-self-center sm:justify-self-center md:w-[100%] sm:w-[70%]  h-[207px] border-2 border-[#f6b432] rounded-[8px] border-solid pl-[21px] pr-[20px]">
         <div className="text-start">
-          <h3 className="  xs:text-[22px] text-[12px] text-[#f6b432] mt-[20px] leading-[29px]">
+          <h3 className="  xs:text-[22px] sm:text-[24px] text-[12px] text-[#f6b432] mt-[20px] leading-[29px]">
             {props.poolData.title}
           </h3>
           <p className=" xs:text-[18px] text-[14px] text-[#ffffff] mt-[18px] h-[62px] leading-[22px] ">
